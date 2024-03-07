@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/save"
+        android:title="Save current connection conf."
+        />
+
+    <item
+        android:id="@+id/load"
+        android:title="Load connection conf."
+        />
+
+    <item
+        android:id="@+id/web"
+        android:title="Web page"
+        />
+
+    <item
+        android:id="@+id/legal"
+        android:title="Legal documentations"
+        />
+
+    <item
+        android:id="@+id/instructions"
+        android:title="Instructions"
+        />
+
+</menu>

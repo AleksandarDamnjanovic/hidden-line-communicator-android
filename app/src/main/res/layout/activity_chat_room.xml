@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatRoom">
+
+    <ScrollView
+        android:id="@+id/message_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/edittext_background"
+        android:layout_margin="5dp"
+        android:layout_above="@id/controls"
+        >
+
+        <LinearLayout
+            android:id="@+id/message_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/controls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp">
+
+        <EditText
+            android:layout_toLeftOf="@id/send_message"
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textSize="18dp"
+            android:background="@drawable/edittext_background"/>
+
+        <TextView
+            android:id="@+id/send_message"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:text="SEND"
+            android:layout_marginLeft="10dp"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:textSize="18dp"
+            android:background="@drawable/button_background"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
